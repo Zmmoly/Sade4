@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تطبيق طلب الأذونات"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="هذا التطبيق يطلب جميع الأذونات الممكنة على Android 15"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="#666666"
+        android:paddingBottom="20dp" />
+
+    <Button
+        android:id="@+id/requestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="طلب جميع الأذونات"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/accessibilityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="فتح إعدادات إمكانية الوصول"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F5F5"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اضغط على الزر لطلب الأذونات"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="4dp" />
+    </ScrollView>
+
+</LinearLayout>
